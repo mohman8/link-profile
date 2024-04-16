@@ -1,0 +1,83 @@
+.container {
+  background-color: hsl(0, 0%, 12%);
+  height: 70vh;
+  width: 22vw;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 28px;
+}
+.button_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 200px;
+}
+.container img {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  margin: 0;
+}
+.container .one {
+  font-size: 18px;
+  color: white;
+  margin: 0;
+}
+.container .two {
+  color: green;
+  margin: 0;
+}
+.container .three {
+  font-size: 12px;
+  color: white;
+  margin: 0;
+}
+
+._active_button,
+._inactive_button {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 10px;
+  background-color: #333;
+}
+._active_button {
+  background-color: greenyellow;
+  color: #333;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .container {
+    height: 90vh;
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 773px) {
+  .container {
+    height: auto;
+    font-size: 12px;
+    width: 35vw;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .container {
+    height: auto;
+    width: 55vw;
+  }
+}
+@media screen and(max-width:768px) {
+  .container {
+    height: 50vh;
+    width: 85vw;
+  }
+}
